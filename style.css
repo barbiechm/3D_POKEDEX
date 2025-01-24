@@ -5,15 +5,25 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f0f0f0;
+      background-color: #8dd1ff;
     }
     
     #three-container {
       width: 500px;
       height: 500px;
-    /*  border: 2px solid #000; */
+      border: 2px solid #000;
       overflow: hidden; 
       border-radius: 20%;
+    }
+    .pokemon-info{
+
+      /* background-color: aliceblue;
+      flex: 1; 
+      background-color: lightgray;
+      display: flex;
+      align-items: center;
+      justify-content: center; */
+      
     }
 
     canvas {
