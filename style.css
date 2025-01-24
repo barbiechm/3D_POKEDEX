@@ -1,33 +1,70 @@
 
     body {
-      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #dad0d0;
       height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      background-color: #8dd1ff;
+      justify-content: flex-start;
+      padding: 20px;
     }
     
     #three-container {
+
+      margin-top: 10px;
       width: 500px;
       height: 500px;
-      border: 2px solid #000;
-      overflow: hidden; 
+      border: 2px solid #000000;
+      overflow: hidden;
       border-radius: 20%;
+      display: flex;
+      flex-direction: column; 
     }
-    .pokemon-info{
+   /*  .pokemon-info{
 
       /* background-color: aliceblue;
       flex: 1; 
       background-color: lightgray;
       display: flex;
       align-items: center;
-      justify-content: center; */
+      justify-content: center; 
+      
+    }
+*/
+header {
+  
+  width: 100%;
+  background-color: #8a0404; /* Fondo oscuro */
+  color: #fff; /* Texto blanco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border: 2px solid #000;
+  border-radius: 4rem;
+
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Espacio entre los botones */
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+  .logo{
+    
+      margin-bottom: 15px;
+      
       
     }
 
-    canvas {
-        display: block; /* Para eliminar los márgenes y hacer que el canvas ocupe todo el espacio del contenedor */
+   /*  canvas {
+        display: block; 
         width: 100%;
         height: 100%;
-      }
+      } */
