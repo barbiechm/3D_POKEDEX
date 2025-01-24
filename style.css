@@ -1,0 +1,23 @@
+
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    
+    #three-container {
+      width: 500px;
+      height: 500px;
+    /*  border: 2px solid #000; */
+      overflow: hidden; 
+      border-radius: 20%;
+    }
+
+    canvas {
+        display: block; /* Para eliminar los márgenes y hacer que el canvas ocupe todo el espacio del contenedor */
+        width: 100%;
+        height: 100%;
+      }
