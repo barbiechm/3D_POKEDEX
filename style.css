@@ -1,41 +1,22 @@
+body {
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #dad0d0;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      padding: 20px;
-    }
-    
-    #three-container {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('img/pokeball.png');
+  background-size: 200px;
+  
+  font-weight: 600;
+  text-transform: uppercase; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
 
-      margin-top: 10px;
-      width: 500px;
-      height: 500px;
-      border: 2px solid #000000;
-      overflow: hidden;
-      border-radius: 20%;
-      display: flex;
-      flex-direction: column; 
-    }
-   /*  .pokemon-info{
-
-      /* background-color: aliceblue;
-      flex: 1; 
-      background-color: lightgray;
-      display: flex;
-      align-items: center;
-      justify-content: center; 
-      
-    }
-*/
 header {
   
   width: 100%;
-  background-color: #8a0404; /* Fondo oscuro */
+  background-color: #921010; /* Fondo oscuro */
   color: #fff; /* Texto blanco */
   display: flex;
   flex-direction: column;
@@ -43,27 +24,147 @@ header {
   padding: 20px 0;
   border: 2px solid #000;
   border-radius: 4rem;
-
 }
 
 .nav-list {
   list-style: none;
   display: flex;
-  gap: 20px; /* Espacio entre los botones */
+  gap: 20px; 
 }
 
 .nav-item {
   display: inline-block;
 }
 
-  .logo{
-    
-      margin-bottom: 15px;
-      
-      
-    }
+.logo {
+  margin-bottom: 15px;
+}
+.nav-item button {
+  text-transform: uppercase;
+  background-color: #ffce09; 
+  border: solic black;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
 
-   /*  canvas {
+#Bulbasur{
+
+  background-color: #3ba7ff;
+}
+#Vaporeon{
+
+  background-color: rgb(0, 204, 143);
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns:  2fr 1fr; /* Tres columnas: izquierda, centro, derecha */
+  gap: 40px; /* Espacio entre columnas */
+  align-items: center; /* Centra verticalmente los elementos */
+  height: 200vh;
+  padding: 20px;
+  background-color: #6d6d6d; /* Fondo general */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+ 
+}
+
+#three-container {
+  overflow: hidden;
+  box-shadow: none;
+  width: 500px;
+  height: 500px;
+  
+  border-radius: 40px;
+ 
+}
+
+.right-column {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #454545;
+  padding: 15px;
+  border: 2px #000;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 500px;
+  overflow: hidden;
+}
+
+.pokemon-tipos,
+.pokemon-stats,
+.pokemon-info {
+  
+  display: flex;
+  width: 100%; /* Ocupan el ancho completo de la columna */
+  flex-direction: column;
+  background-color: #eef7a3;
+  align-items: center;
+  justify-content: center; /* Centra el contenido verticalmente */
+  border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  flex: 1;
+  margin: 2px 0;
+  max-height: calc((100% - 20px) / 3)
+  
+}
+.pokemon-tipos p,h2,
+.pokemon-stats p,h2,h1,
+.pokemon-info p,h2 {
+
+
+  margin: 5px 0px; /* Reduce el espacio entre los elementos */
+}
+
+.electric-tipo{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 35px;
+  background-color: #279eff;
+  border:2px solid #104ae7;
+  border-radius: 20px;
+}
+
+.fighting-tipo{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 35px;
+  background-color: #f02e2e;
+  border:2px solid #960808;
+  border-radius: 20px;
+}
+
+.stat{
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 35px;
+  background-color: #f02e2e;
+  border:2px solid #960808;
+  border-radius: 20px;
+}
+
+/* p{
+  background-color: #a3a3a3;
+  border-radius: 2px;
+} */
+
+/*  canvas {
         display: block; 
         width: 100%;
         height: 100%;

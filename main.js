@@ -12,21 +12,13 @@ renderer.setSize(500, 500);
 renderer.setClearColor(0x000000);
 document.getElementById('three-container').appendChild(renderer.domElement);
 
-const geometry = new THREE.BoxGeometry(1, 1, 1 );
-const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( geometry, material );
-//scene.add( cube );
 
 const controls = new OrbitControls( camera, renderer.domElement );
 
 
-//camera.position.set(0, 0.2, 2);
 controls.update();
 
-  // Apuntar la cámara hacia el centro
- // camera.lookAt(2, 0, 0);
-
-camera.fov = 50; // Ajusta este valor según sea necesario
+camera.fov = 50; 
 camera.updateProjectionMatrix(); 
 
 
@@ -36,7 +28,7 @@ const light = new THREE.AmbientLight(0xffffff, 2.5);
 		//GLTF
 const loader = new GLTFLoader();
 
-loader.load( '/VAPOREON.gltf', function ( gltf ) {
+loader.load( '/PIKACHU.gltf', function ( gltf ) {
     const model = gltf.scene;
 	scene.add( model );
 
