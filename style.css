@@ -14,10 +14,10 @@ body {
 }
 
 header {
-  
+ 
   width: 100%;
-  background-color: #921010; /* Fondo oscuro */
-  color: #fff; /* Texto blanco */
+  background-color: #921010; 
+  color: #fff; 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,6 +27,7 @@ header {
 }
 
 .nav-list {
+  
   list-style: none;
   display: flex;
   gap: 20px; 
@@ -40,6 +41,7 @@ header {
   margin-bottom: 15px;
 }
 .nav-item button {
+  
   text-transform: uppercase;
   background-color: #ffce09; 
   border: solic black;
@@ -63,13 +65,15 @@ header {
 
 .grid-container {
   display: grid;
-  grid-template-columns:  2fr 1fr; /* Tres columnas: izquierda, centro, derecha */
-  gap: 40px; /* Espacio entre columnas */
-  align-items: center; /* Centra verticalmente los elementos */
+  grid-template-columns:  1fr 1fr; 
+  gap: 20px; 
+  align-items: center; 
+  width: 70%;
   height: 200vh;
   padding: 20px;
-  background-color: #6d6d6d; /* Fondo general */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #4c4c4c; 
+  box-shadow: 0 4px 8px rgba(67, 0, 0, 0.701);
+  
  
 }
 
@@ -89,11 +93,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background-color: #454545;
+  background-color: #555555;
   padding: 15px;
   border: 2px #000;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(42, 42, 42, 0.1);
   height: 500px;
   overflow: hidden;
 }
@@ -103,13 +107,13 @@ header {
 .pokemon-info {
   
   display: flex;
-  width: 100%; /* Ocupan el ancho completo de la columna */
+  width: 100%; 
   flex-direction: column;
-  background-color: #eef7a3;
+  background-color: #dcdcdc;
   align-items: center;
-  justify-content: center; /* Centra el contenido verticalmente */
+  justify-content: center; 
   border-radius: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   flex: 1;
   margin: 2px 0;
   max-height: calc((100% - 20px) / 3)
@@ -120,32 +124,21 @@ header {
 .pokemon-info p,h2 {
 
 
-  margin: 5px 0px; /* Reduce el espacio entre los elementos */
+  margin: 5px 0px; 
 }
 
-.electric-tipo{
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50%;
-  height: 35px;
-  background-color: #279eff;
-  border:2px solid #104ae7;
-  border-radius: 20px;
-}
-
-.fighting-tipo{
+.tipo{
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 50%;
   height: 35px;
-  background-color: #f02e2e;
-  border:2px solid #960808;
+  background-color: #ff8f27;
+  border:2px solid #d2e710;
   border-radius: 20px;
 }
+
 
 .stat{
   color: #ffffff;
@@ -159,13 +152,3 @@ header {
   border-radius: 20px;
 }
 
-/* p{
-  background-color: #a3a3a3;
-  border-radius: 2px;
-} */
-
-/*  canvas {
-        display: block; 
-        width: 100%;
-        height: 100%;
-      } */
