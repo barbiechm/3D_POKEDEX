@@ -61,7 +61,7 @@ function mostrarPokemon(poke) {
 const loader = new GLTFLoader();
 
 function loadModel(modelName) {
-  const modelPath = `/models/${modelName.toUpperCase()}.gltf`;
+  const modelPath = `./models/${modelName.toUpperCase()}.gltf`;
   console.log(`Cargando modelo: ${modelName}`);
 
  
