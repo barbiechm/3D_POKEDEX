@@ -9,7 +9,7 @@ const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer();
 
 renderer.setSize(500, 500);
-renderer.setClearColor(0x000000);
+renderer.setClearColor(0xd3d3d3);
 document.getElementById("three-container").appendChild(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
