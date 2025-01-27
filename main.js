@@ -1,7 +1,7 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js";
+import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.172.0/build/three.module.js';
 
-import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/js/loaders/GLTFLoader.js";
-  import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.172.0/examples/js/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 
 // Configuración de la escena
 const scene = new THREE.Scene();
