@@ -1,13 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>My first three.js app</title>
-		<link rel="stylesheet" href="style.css">		
-	</head>
-	<body>
-		<div id="three-container"></div>
+  <head>
+    <meta charset="utf-8" />
+    <title>POKEDEX</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-		<script type="module" src="main.js"></script>
-	</body>
+  </head>
+  <body> 
+    
+    <header>
+      <div class="logo">
+       
+        <img src="./img/pokedex.png" alt="Logo Pokédex">
+
+      </div>
+      
+      <ul class="nav-list">
+        <nav class="nav">
+          
+          <li class="nav-item"><button class="btn btn-Vaporeon" id="Vaporeon">Vaporeon</button></li> 
+          <li class="nav-item"><button class="btn btn-header Bulbasaur" id="Bulbasaur">Bulbasaur</button></li>
+          <li class="nav-item"><button class="btn btn-header Pikachu" id="Pikachu">Pikachu</button></li>
+
+        </ul>
+      </nav>
+    </header>
+
+  
+    <main class="grid-container">
+      
+      <div id="three-container"></div>
+      <div id ="listaPokemon" >
+      <!-- <div class="right-column">
+        
+        <div class="pokemon-stats">
+          <h2>STATS</h2>
+          <p class="stat">4m</p>
+          <p class="stat">60kg</p>
+        </div>
+
+        <div class="pokemon-info">
+          <p class="pokemon-id">#025</p>
+          <h2 class="pokemon-nombre">Pikachu</h2>
+   
+           
+          </div>
+
+          <div class="pokemon-tipos">
+            <H2>TYPE</H2>
+            <p class="tipo">ELECTRIC</p>
+  
+          </div>
+        </div> -->
+
+      </div>
+    </div>
+    </main>
+    
+    <script type="module" src="main.js"></script>
+  </body>
 </html>
